@@ -25,7 +25,7 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: https://oearhp/github.io/resume
+      url: https://github.io
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
