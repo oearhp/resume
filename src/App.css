@@ -1,0 +1,185 @@
+@import './index.css';
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 900px;
+  min-height: 100vh;
+  padding: 3rem 2rem;
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  color: #888888;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: color 0.3s ease;
+}
+
+.back-btn:hover {
+  color: var(--highlight-colour);
+}
+
+.expand-indicator {
+  color: var(--highlight-colour);
+  display: inline-block;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  margin-top: 2rem;
+  text-transform: uppercase;
+}
+
+.expanded-card {
+  margin-bottom: 2rem;
+}
+
+.expand-view {
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+.intro-text {
+  margin-bottom: 2.5rem;
+}
+
+.landing-name {
+  border-bottom: none;
+  font-size: 4rem;
+  font-weight: 300;
+  letter-spacing: 6px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.landing-page {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 65vh;
+  justify-content: center;
+  text-align: center;
+}
+
+.linkedin {
+  align-items: flex-end;
+  display: inline-flex;
+}
+
+.linkedin-logo {
+  filter: grayscale(1);
+  height: 24px;
+  width: 24px;
+}
+
+.main-content {
+  animation: fadeIn 0.8s ease-in-out;
+  flex: 1;
+  margin-top: 4rem;
+}
+
+.nav {
+  border-bottom: 2px solid var(--accent-colour);
+  display: flex;
+  gap: 2.5rem;
+  justify-content: flex-end;
+  padding-bottom: 1.5rem;
+}
+
+.nav-link {
+  background: none;
+  border: none;
+  color: #888888;
+  cursor: pointer;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.nav-link.active,
+.nav-link:hover {
+  color: var(--highlight-colour);
+}
+
+.project-summary-card {
+  background-color: #111111;
+  border: 1px solid var(--accent-colour);
+  cursor: pointer;
+  padding: 3rem;
+  transition: all 0.4s ease;
+}
+
+.project-summary-card h2 {
+  border-bottom: none;
+  font-size: 1.8rem;
+  margin-top: 0;
+}
+
+.project-summary-card:hover {
+  background-color: #1A1A1A;
+  border-color: var(--highlight-colour);
+  transform: translateY(-5px);
+}
+
+.resume-company {
+  color: var(--highlight-colour);
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.resume-date {
+  color: #666666;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.resume-item {
+  margin-bottom: 2rem;
+}
+
+.resume-section {
+  margin-bottom: 3.5rem;
+}
+
+.resume-title-group {
+  align-items: baseline;
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem;
+}
+
+.showcase-card {
+  background-color: var(--bg-colour);
+  border: 1px solid var(--accent-colour);
+  padding: 2rem;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.showcase-card h4 {
+  color: var(--highlight-colour);
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.showcase-card:hover {
+  border-color: #555555;
+  transform: translateY(-5px);
+}
+
+.showcase-grid {
+  display: grid;
+  gap: 2.5rem;
+  grid-template-columns: 1fr;
+  margin-top: 2rem;
+}
+
+.tool-section h2 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
