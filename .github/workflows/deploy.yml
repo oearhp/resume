@@ -1,15 +1,15 @@
-# Simple workflow for deploying static content to GitHub Pages
+# Simple workflow for deploying static content to Github Pages
 name: Deploy static content to Pages
 
 on:
-  # Runs on pushes targeting the default branch
+  # Runs os pushes targeting the default brance
   push:
     branches: ['main']
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# Sets the GITHUB_TOKEN permissions to allow deployment to GitHub Pages
+# Sets the GITHUB_TOKEN permissions to allow deployment to Github Pages
 permissions:
   contents: read
   pages: write
@@ -25,27 +25,27 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: https://github.io
-    runs-on: ubuntu-latest
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: macos-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7
+        uses: actions/checkout@v7
       - name: Set up Node
-        uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e # v6
+        uses: actions/setup-node@v6
         with:
           node-version: lts/*
           cache: 'npm'
       - name: Install dependencies
-        run: npm ci
+        run: npm install
       - name: Build
-        run: npm run build
+        run: npm run Build
       - name: Setup Pages
-        uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6
+        uses: actions/configure-pages@v6
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5
+        uses: actions/upload-pages-artifact@v5
         with:
           # Upload dist folder
           path: './dist'
-      - name: Deploy to GitHub Pages
+      - name: Deploy to Github Pages
         id: deployment
-        uses: actions/deploy-pages@cd2ce8fcbc39b97be8ca5fce6e763baed58fa128 # v5
+        uses: action/deploy-pages@v5
