@@ -2,6 +2,7 @@ import { useState } from 'react';
 import LandingPage from './components/LandingPage';
 import Navigation from './components/Navigation';
 import ResumePage from './components/ResumePage';
+import ShowcasesPage from './components/ShowcasesPage'
 
 export default function App() {
   const [currentView,
@@ -14,6 +15,7 @@ export default function App() {
 
       {currentView === 'home' && <LandingPage />}
       {currentView === 'resume' && <ResumePage />}
+      {currentView === 'showcases' && <ShowcasesPage />}
     </div>
   )
 }
