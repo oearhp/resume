@@ -126,9 +126,11 @@
 }
 
 .resume-company {
+  background-color: #E5493E;
   color: var(--highlight-colour);
   font-size: 1.1rem;
   font-weight: 500;
+  padding: 0.5rem;
 }
 
 .resume-date {
@@ -177,6 +179,60 @@
   gap: 2.5rem;
   grid-template-columns: 1fr;
   margin-top: 2rem;
+}
+
+.status-badge {
+  border: 1px solid;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  padding: 0.2rem 0.6rem;
+  text-transform: uppercase;
+}
+
+.status-fail {
+  border-color: #FF8B94;
+  color: #FF8B94;
+}
+
+.status-norun {
+  border-color: var(--accent-colour);
+  color: var(--accent-colour);
+}
+
+.status-pass {
+  border-color: #A8E6CF;
+  color: #A8E6CF;
+}
+
+.table {
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  text-align: left;
+  width: 100%;
+}
+
+.table td,
+.table th {
+  border-bottom: 1px solid var(--accent-colour);
+  padding: 1rem;
+}
+
+.table th {
+  color: #888888;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.table tr:hover td {
+  background-color: #111111;
+}
+
+.table-container {
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+  overflow-x: auto;
 }
 
 .tool-section h2 {
