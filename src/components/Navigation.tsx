@@ -20,12 +20,12 @@ export default function Navigation({ currentView, setView }: NavigationProps) {
                 Resumé
             </button>
 
-            {/* <button
+            <button
                 className={`nav-link ${currentView === 'showcases' ? 'active' : ''}`}
                 onClick={() => setView('showcases')}
             >
                 Showcases
-            </button> */}
+            </button>
 
             <a
                 href='https://www.linkedin.com/in/phraeophan-s-60b9554a/'
