@@ -85,7 +85,7 @@ export default function ResumePage() {
                         <span className='resume-company'>Cal-Comp Electronics (Thailand)</span>
                         <span className='resume-date'>Sep 2016 - Dec 2020</span>
                     </div>
-                    <h3>Software Quality Assurance Engineer</h3>
+                    <h3>Mechanical Engineer</h3>
                     <div>
                         <ul>
                             <li><strong>Transferable Skills: </strong>Applied strong analytical and problem-solving skills in a mechanical engineering role, building a solid technical foundation before transferring to software quality assurance.</li>
