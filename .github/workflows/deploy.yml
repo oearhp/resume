@@ -42,7 +42,7 @@ jobs:
       - name: Download & Extract Playwright Report
         uses: dawidd6/action-download-artifact@v6
         with:
-          github_token: ${{ secret.YOUR_GITHUB_PAT }}
+          github_token: ${{ secrets.YOUR_GITHUB_PAT }}
           repo: oearhp/api-automation-playwright
           workflow: playwright.yml
           name: playwright-report
