@@ -5,55 +5,55 @@ const testCases = [
         id: 'TC_AUTH_001',
         description: 'Successful Token Generation with Valid Credentials',
         tool: 'Playwright',
-        status: 'NO RUN'
+        status: 'PASS'
     },
     {
         id: 'TC_AUTH_002',
         description: 'Authentication Failure with Invalid Password',
         tool: 'Playwright',
-        status: 'NO RUN'
+        status: 'PASS'
     },
     {
         id: 'TC_BOOKING_001',
         description: 'Create Booking with Standard Valid Payload',
         tool: 'Playwright',
-        status: 'NO RUN'
+        status: 'PASS'
     },
     {
         id: 'TC_BOOKING_002',
         description: 'Zero-Value Total Price Verification',
         tool: 'Playwright',
-        status: 'NO RUN'
+        status: 'PASS'
     },
     {
         id: 'TC_BOOKING_003',
         description: 'Rejection of Missing Mandatory Fields',
         tool: 'Playwright',
-        status: 'NO RUN'
+        status: 'PASS'
     },
     {
         id: 'TC_GET_001',
         description: 'Retrieve Existing Booking by Valid ID',
         tool: 'Playwright',
-        status: 'NO RUN'
+        status: 'PASS'
     },
     {
         id: 'TC_GET_002',
         description: 'Attempt Retrieval with Non-Existent ID',
         tool: 'Playwright',
-        status: 'NO RUN'
+        status: 'PASS'
     },
     {
         id: 'TC_PUT_001',
         description: 'Full Update of an Existing Booking with Valid Authorisation',
         tool: 'Playwright',
-        status: 'NO RUN'
+        status: 'PASS'
     },
     {
         id: 'TC_PUT_002',
         description: 'Security Verification - Unauthorised Update Attempt',
         tool: 'Playwright',
-        status: 'NO RUN'
+        status: 'PASS'
     }
 ];
 
@@ -101,7 +101,7 @@ export default function ShowcasesPage() {
                                         <td>{tc.tool}</td>
                                         <td>
                                             <span className={`status-badge ${tc.status === 'PASS' ? 'status-pass'
-                                                : tc.status === 'NO RUN' ? 'status-norun'
+                                                : tc.status === 'PASS' ? 'status-norun'
                                                     : 'status-fail'
                                                 }`}>{tc.status}
                                             </span>
