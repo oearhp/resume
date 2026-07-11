@@ -114,7 +114,7 @@ export default function ShowcasesPage() {
                     <div className="table-container">
                         <h2>Result</h2>
                         <iframe
-                            src="./report/"
+                            src="/resume/report/index.html"
                             title="Playwright Test Report"
                             width="100%"
                             height="600px"
