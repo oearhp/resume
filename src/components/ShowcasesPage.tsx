@@ -111,6 +111,16 @@ export default function ShowcasesPage() {
                             </tbody>
                         </table>
                     </div>
+                    <div className="table-container">
+                        <h2>Result</h2>
+                        <iframe
+                            src="./report/"
+                            title="Playwright Test Report"
+                            width="100%"
+                            height="600px"
+                            style={{ border: "1px solid #ccc", borderRadius: "8px", marginTop: "15px" }}
+                        />
+                    </div>
                 </div>
             )}
         </div>
