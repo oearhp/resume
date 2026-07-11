@@ -39,6 +39,15 @@ jobs:
         run: npm install
       - name: Build
         run: npm run build
+      - name: Download & Extract Playwright Report
+        uses: dawidd6/action-download-artifact@v6
+        with:
+          github_token: ${{ secret.YOUR_GITHUB_PAT }}
+          repo: oearhp/api-automation-playwright
+          workflow: playwright.yml
+          name: playwright-report
+          path: ./dist/report
+          if_no_artifact_found: warn
       - name: Setup Pages
         uses: actions/configure-pages@v6
       - name: Upload artifact
